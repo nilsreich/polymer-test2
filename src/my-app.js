@@ -1,0 +1,31 @@
+// Element is the same as Polymer.Element in 2.x
+// Modules give you the freedom to rename the members that you import
+import { Element as PolymerElement } from '../node_modules/@polymer/polymer/polymer-element.js';
+
+// Import the Paper-Button and Paper-input
+import "../node_modules/@polymer/paper-button/paper-button.js";
+import "../node_modules/@polymer/paper-input/paper-input.js";
+
+// Added "export" to export the MyApp symbol from the module
+export class MyApp extends PolymerElement {
+
+    // Define a string template instead of a `<template>` element.
+    static get template() {
+        return `<div><paper-input always-float-label label="Floating label" value="{{name}}">
+        </paper-input></div><paper-button>[[text]]</paper-button>[[name]]`
+    }
+
+    constructor() {
+        super();
+        this.text = 'Klick'
+    }
+
+    // properties, observers, etc. are identical to 2.x
+    static get properties() {
+        name: {
+            Type: String
+        }
+    }
+}
+
+customElements.define('my-app', MyApp);

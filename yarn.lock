@@ -134,3 +134,7 @@
 "@webcomponents/webcomponentsjs@1.0.18", "@webcomponents/webcomponentsjs@^1.0.0", "@webcomponents/webcomponentsjs@^1.0.18":
   version "1.0.18"
   resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.0.18.tgz#d8cfc5fc62e85a09e5101db573c24f87acb1d062"
+
+lit-html@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-0.7.1.tgz#61785045cf84f9ee955fa078c2985b52b765ad16"

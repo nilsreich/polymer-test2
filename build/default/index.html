@@ -9,7 +9,7 @@
   <script type="module" src="src/my-button.js"></script>
   <script type="module" src="src/my-slot.js"></script>
   <script type="module" src="src/my-lit.js"></script>
-  
+
 </head>
 
 <body>
@@ -18,10 +18,14 @@
   <my-button value="100" step="5" max="150" min="2"></my-button>
   <my-button value="10" step="1" max="15" min="3"></my-button>
   <my-slot>
-      <span slot="title" class="title">🍭 Fancy title</span>
-      <p class="content">I'm going straight to the anonymous slot.</p>
+    <span slot="title" class="title">🍭 Fancy title</span>
+    <p class="content">I'm going straight to the anonymous slot.</p>
   </my-slot>
-  <div id="container"></div>
+  <my-lit>
+    <div id="container">
+      <span slot="title">es war einmal</span>
+    </div>
+  </my-lit>
   <h1>test</h1>
 
 

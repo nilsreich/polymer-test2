@@ -4,8 +4,9 @@ import { Element as PolymerElement } from '../node_modules/@polymer/polymer/poly
 
 import { html, render } from '../node_modules/lit-html/lit-html.js';
 
+
 const start = html`<h1>One Great Title</h1>`;
-const end = html`<p>The End!</p>`;
+const end = html`<my-slot>The End!</my-slot>`;
 
 const story = content => {
   return html`

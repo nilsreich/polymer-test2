@@ -6,4 +6,4 @@ const App = ()=> <MyComponent name="John Doe" />;
 
 const main = document.querySelector('main')
 
-Preact.render(<App />, main)
+main && Preact.render(<App />, main)
